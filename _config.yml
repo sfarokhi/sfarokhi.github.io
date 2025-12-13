@@ -214,7 +214,7 @@ plugins:
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar
+  # - jekyll/scholar  # Not supported by GitHub Pages
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-terser
@@ -268,31 +268,26 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
-
-scholar:
-  last_name: [Farokhi]
-  first_name: [Sallar]
-
-  style: apa
-  locale: en
-
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [latex, smallcaps, superscript]
-
-  replace_strings: true
-  join_strings: true
-
-  details_dir: bibliography
-  details_link: Details
-
-  query: "@*"
-  group_by: year
-  group_order: descending
+# Note: jekyll-scholar is not supported by GitHub Pages.
+# To use jekyll-scholar, you need to build with GitHub Actions.
+# See: https://jekyllrb.com/docs/continuous-integration/github-actions/
+#
+# scholar:
+#   last_name: [Farokhi]
+#   first_name: [Sallar]
+#   style: apa
+#   locale: en
+#   source: /_bibliography/
+#   bibliography: papers.bib
+#   bibliography_template: bib
+#   bibtex_filters: [latex, smallcaps, superscript]
+#   replace_strings: true
+#   join_strings: true
+#   details_dir: bibliography
+#   details_link: Details
+#   query: "@*"
+#   group_by: year
+#   group_order: descending
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid

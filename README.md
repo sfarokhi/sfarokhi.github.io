@@ -1,42 +1,35 @@
-# Sallar Farokhi - Academic Portfolio
+# Sallar Farokhi - Research Portfolio
 
-A modern academic portfolio website built with the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme, showcasing research projects, publications, and professional experience.
+A modern, static portfolio website showcasing research projects, publications, and professional experience. Built with pure HTML, CSS, and JavaScript for maximum compatibility and simplicity.
 
 ## Features
 
 - **Research Projects**: Showcase of 5 research projects in distributed systems, security, and data analytics
-- **CV/Resume**: Professional curriculum vitae with downloadable PDF
-- **Publications**: Academic publications and research papers
+- **CV/Resume**: Professional curriculum vitae with downloadable PDF viewer
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean, professional design with dark mode support
-- **Jekyll-based**: Easy to maintain and customize
+- **Modern UI**: Clean, professional design with smooth animations
+- **No Build Step**: Pure static HTML - works directly with GitHub Pages
+- **Fast Loading**: Optimized for performance
 
 ## Structure
 
-This website uses the al-folio Jekyll theme structure:
-
 ```
 sfarokhi.github.io/
-├── _config.yml          # Site configuration
-├── _pages/              # Page content (about, projects, cv, etc.)
-├── _projects/           # Research project pages
-├── _data/               # Data files (socials, cv, etc.)
-├── _layouts/            # Page layouts
-├── _includes/           # Reusable components
-├── _sass/               # SCSS stylesheets
-├── assets/              # Static assets (images, PDFs, etc.)
-└── Gemfile              # Ruby dependencies
+├── index.html          # Homepage with about section
+├── projects.html       # Research projects page
+├── cv.html            # CV/Resume page
+├── assets/
+│   ├── css/
+│   │   └── style.css  # Main stylesheet
+│   ├── js/
+│   │   └── main.js    # JavaScript functionality
+│   └── pdf/           # PDF files (resume and papers)
+└── README.md          # This file
 ```
 
 ## Setup
 
-### Prerequisites
-
-- Ruby (2.7 or higher)
-- Bundler gem
-- Jekyll
-
-### Installation
+### Local Development
 
 1. Clone the repository:
    ```bash
@@ -44,44 +37,45 @@ sfarokhi.github.io/
    cd sfarokhi.github.io
    ```
 
-2. Install dependencies:
+2. Open `index.html` in your browser or use a local server:
    ```bash
-   bundle install
+   # Using Python
+   python -m http.server 8000
+   
+   # Using Node.js
+   npx serve
    ```
 
-3. Build and serve locally:
-   ```bash
-   bundle exec jekyll serve
-   ```
+3. Visit `http://localhost:8000` in your browser
 
-4. Visit `http://localhost:4000` in your browser
+## Deployment
+
+This site is configured for GitHub Pages and works without any build step:
+
+1. Push your changes to the `main` branch
+2. GitHub Pages will automatically serve the static files
+3. Your site will be available at `https://sfarokhi.github.io`
+
+**Note**: The `.nojekyll` file tells GitHub Pages not to use Jekyll, so your static HTML files are served directly.
 
 ## Customization
 
 ### Update Personal Information
 
-- Edit `_config.yml` for site-wide settings
-- Edit `_data/socials.yml` for social media links
-- Edit `_pages/about.md` for your bio
-- Edit `_data/cv.yml` for CV information
+- Edit `index.html` to update your bio and contact information
+- Edit `projects.html` to add or modify projects
+- Edit `cv.html` to change the CV page
+
+### Modify Styling
+
+- Edit `assets/css/style.css` to customize colors, fonts, and layout
+- CSS variables are defined at the top for easy theming
 
 ### Add Projects
 
-Create new markdown files in `_projects/` directory following the existing format.
-
-### Add Publications
-
-Add publications to `_bibliography/papers.bib` in BibTeX format.
-
-## Deployment
-
-This site is configured for GitHub Pages. Simply push to the `main` branch and GitHub Pages will automatically build and deploy the site.
-
-For manual deployment:
-```bash
-bundle exec jekyll build
-# Deploy the _site/ directory to your web server
-```
+1. Add a new project card in `projects.html` following the existing format
+2. Add the project PDF to `assets/pdf/` if needed
+3. Update the project links and descriptions
 
 ## Research Projects
 
@@ -91,9 +85,24 @@ bundle exec jekyll build
 4. **SADE**: Safety Aligned Dataset Engine
 5. **Speedly**: Stream processing for traffic analysis
 
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Advantages of Static HTML
+
+- ✅ **No Build Step**: Works directly with GitHub Pages
+- ✅ **Fast**: No server-side processing needed
+- ✅ **Simple**: Easy to understand and modify
+- ✅ **Reliable**: No dependency issues or build failures
+- ✅ **Compatible**: Works with any static hosting service
+
 ## License
 
-This website uses the [al-folio](https://github.com/alshedivat/al-folio) theme, which is licensed under the MIT License.
+This portfolio template is open source and available for personal use.
 
 ## Contact
 

@@ -1,79 +1,101 @@
-# Portfolio Website
+# Sallar Farokhi - Academic Portfolio
 
-A modern, responsive portfolio website showcasing research papers, reports, and professional resume. Built for GitHub Pages.
+A modern academic portfolio website built with the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme, showcasing research projects, publications, and professional experience.
 
 ## Features
 
-- **Resume Display**: Interactive PDF viewer for resume
-- **Project Showcases**: Preview cards for each research paper/report
-- **GitHub Integration**: Direct links to GitHub repositories for each project
+- **Research Projects**: Showcase of 5 research projects in distributed systems, security, and data analytics
+- **CV/Resume**: Professional curriculum vitae with downloadable PDF
+- **Publications**: Academic publications and research papers
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean, professional design with smooth animations
+- **Modern UI**: Clean, professional design with dark mode support
+- **Jekyll-based**: Easy to maintain and customize
 
 ## Structure
 
+This website uses the al-folio Jekyll theme structure:
+
 ```
-portfolio/
-├── index.html          # Main HTML file
-├── assets/
-│   ├── css/
-│   │   └── style.css  # Stylesheet
-│   └── js/
-│       └── main.js    # JavaScript functionality
-├── pdfs/              # PDF files (resume and papers)
-└── README.md          # This file
+sfarokhi.github.io/
+├── _config.yml          # Site configuration
+├── _pages/              # Page content (about, projects, cv, etc.)
+├── _projects/           # Research project pages
+├── _data/               # Data files (socials, cv, etc.)
+├── _layouts/            # Page layouts
+├── _includes/           # Reusable components
+├── _sass/               # SCSS stylesheets
+├── assets/              # Static assets (images, PDFs, etc.)
+└── Gemfile              # Ruby dependencies
 ```
 
-## Setup for GitHub Pages
+## Setup
 
-1. Create a new repository on GitHub (e.g., `portfolio` or `sallar-farokhi.github.io`)
+### Prerequisites
 
-2. If using a custom repository name (not `username.github.io`):
-   - Go to repository Settings → Pages
-   - Set Source to `main` branch and `/ (root)` folder
-   - The site will be available at `https://username.github.io/repository-name`
+- Ruby (2.7 or higher)
+- Bundler gem
+- Jekyll
 
-3. If using `username.github.io`:
-   - The site will automatically be available at `https://username.github.io`
+### Installation
 
-4. Push all files to the repository:
+1. Clone the repository:
    ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio website"
-   git branch -M main
-   git remote add origin https://github.com/username/repository-name.git
-   git push -u origin main
+   git clone https://github.com/sfarokhi/sfarokhi.github.io.git
+   cd sfarokhi.github.io
    ```
+
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+3. Build and serve locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. Visit `http://localhost:4000` in your browser
 
 ## Customization
 
-### Update Project Information
+### Update Personal Information
 
-Edit `assets/js/main.js` to update project details, GitHub links, and descriptions.
+- Edit `_config.yml` for site-wide settings
+- Edit `_data/socials.yml` for social media links
+- Edit `_pages/about.md` for your bio
+- Edit `_data/cv.yml` for CV information
 
-### Modify Styling
+### Add Projects
 
-Edit `assets/css/style.css` to customize colors, fonts, and layout. CSS variables are defined at the top for easy theming.
+Create new markdown files in `_projects/` directory following the existing format.
 
-### Add/Remove Projects
+### Add Publications
 
-Add or remove project objects in the `projects` array in `assets/js/main.js`.
+Add publications to `_bibliography/papers.bib` in BibTeX format.
 
-## PDF Files
+## Deployment
 
-Ensure all PDF files are placed in the `pdfs/` directory:
-- `Sallar_Farokhi_Resume.pdf` - Main resume
-- Other research paper PDFs
+This site is configured for GitHub Pages. Simply push to the `main` branch and GitHub Pages will automatically build and deploy the site.
 
-## Browser Support
+For manual deployment:
+```bash
+bundle exec jekyll build
+# Deploy the _site/ directory to your web server
+```
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+## Research Projects
+
+1. **KubeFlex**: Carbon-aware Kubernetes scheduler with live migration
+2. **Locker**: Oblivious datastore for protecting data access patterns
+3. **Moderation and Misinformation**: Content moderation on social media
+4. **SADE**: Safety Aligned Dataset Engine
+5. **Speedly**: Stream processing for traffic analysis
 
 ## License
 
-This portfolio template is open source and available for personal use.
+This website uses the [al-folio](https://github.com/alshedivat/al-folio) theme, which is licensed under the MIT License.
 
+## Contact
+
+- GitHub: [@sfarokhi](https://github.com/sfarokhi)
+- LinkedIn: [sallar-farokhi](https://www.linkedin.com/in/sallar-farokhi)

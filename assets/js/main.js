@@ -54,43 +54,4 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', highlightActiveSection);
     highlightActiveSection(); // Initial call
 
-    // Project card expand/collapse functionality
-    const projectCards = document.querySelectorAll('.project-card');
-    const overlay = document.createElement('div');
-    overlay.className = 'project-overlay';
-    document.body.appendChild(overlay);
-
-    projectCards.forEach(card => {
-        card.addEventListener('click', function(e) {
-            e.stopPropagation();
-            
-            if (this.classList.contains('expanded')) {
-                // Collapse
-                this.classList.remove('expanded');
-                overlay.classList.remove('active');
-                document.body.style.overflow = '';
-            } else {
-                // Expand
-                projectCards.forEach(c => c.classList.remove('expanded'));
-                this.classList.add('expanded');
-                overlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-        });
-    });
-
-    overlay.addEventListener('click', function() {
-        projectCards.forEach(card => card.classList.remove('expanded'));
-        this.classList.remove('active');
-        document.body.style.overflow = '';
-    });
-
-    // Close on escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            projectCards.forEach(card => card.classList.remove('expanded'));
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    });
 });

@@ -6,82 +6,439 @@
     <title>Sallar Farokhi - Research & Development Portfolio</title>
     <meta name="description" content="Research & Development Portfolio - Exploring innovative solutions in distributed systems, security, and data analytics.">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Sallar Farokhi</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <h3 class="sidebar-title">Contents</h3>
+            <nav class="sidebar-nav">
+                <ul class="nav-tree">
+                    <li>
+                        <a href="#header" class="nav-link">Profile</a>
+                        <ul class="nav-subtree">
+                            <li><a href="#header" class="nav-link">About & Contact</a></li>
+                            <li><a href="#resume-section" class="nav-link">Resume</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#education" class="nav-link">Education</a>
+                        <ul class="nav-subtree">
+                            <li><a href="#education" class="nav-link">Master's Degree</a></li>
+                            <li><a href="#education" class="nav-link">Bachelor's Degree</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#certifications" class="nav-link">Certifications</a>
+                        <ul class="nav-subtree">
+                            <li><a href="#certifications" class="nav-link">CKAD</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <ul class="nav-subtree">
+                            <li><a href="#experience" class="nav-link">HyperAnalytics</a></li>
+                            <li><a href="#experience" class="nav-link">Teaching Assistant</a></li>
+                            <li><a href="#experience" class="nav-link">Transfreight</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#capstone" class="nav-link">Capstone Project</a>
+                        <ul class="nav-subtree">
+                            <li><a href="#capstone" class="nav-link">KubeFlex</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav-link">Research Projects</a>
+                        <ul class="nav-subtree">
+                            <li><a href="#projects" class="nav-link">SADE</a></li>
+                            <li><a href="#projects" class="nav-link">Locker</a></li>
+                            <li><a href="#projects" class="nav-link">Speedly</a></li>
+                            <li><a href="#projects" class="nav-link">Moderation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </aside>
 
     <main class="main-content">
-        <section class="hero">
+        <!-- Header Section with Image, Name, and Summary -->
+        <section class="header-section" id="header">
             <div class="container">
-                <h1 class="hero-title">Sallar Farokhi</h1>
-                <p class="hero-subtitle">Research & Development - Exploring innovative solutions in distributed systems, security, and data analytics</p>
+                <div class="header-top">
+                    <div class="profile-image">
+                        <img src="assets/img/portrait.jpeg" alt="Sallar Farokhi">
+                    </div>
+                    <div class="header-info">
+                        <h1 class="name">Sallar Farokhi</h1>
+                        <p class="tagline">Research & Development - Exploring innovative solutions in distributed systems, security, and data analytics</p>
+                        <div class="abstract">
+                            <p>I'm a systems and cloud engineer passionate about building scalable, sustainable, and secure infrastructure. My work spans from developing carbon-aware Kubernetes schedulers that optimize workload placement based on renewable energy availability, to building privacy-preserving datastores that protect data access patterns. I've designed AI safety alignment systems, built high-performance stream processing engines for real-time analytics, and developed automated content moderation solutions. Whether it's architecting cloud-native applications, implementing distributed systems, or creating AI-powered solutions, I focus on building systems that are both technically robust and environmentally conscious.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-bottom" id="resume-section">
+                    <div class="resume-column">
+                        <div class="resume-preview">
+                            <iframe src="assets/pdf/Sallar_Farokhi_Resume.pdf#view=FitH" type="application/pdf" class="resume-iframe"></iframe>
+                        </div>
+                        <div class="resume-actions">
+                            <a href="assets/pdf/Sallar_Farokhi_Resume.pdf" download class="btn btn-primary">Download Resume</a>
+                            <a href="assets/pdf/Sallar_Farokhi_Resume.pdf" target="_blank" class="btn btn-secondary">View Full Screen</a>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact & Links</h3>
+                        <p><strong>Location:</strong> Vancouver, WA</p>
+                        <p><strong>Email:</strong> <a href="mailto:farokhisallar@gmail.com">farokhisallar@gmail.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+18052565333">(805) 256-5333</a></p>
+                        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sallar-farokhi" target="_blank" rel="noopener noreferrer">linkedin.com/in/sallar-farokhi</a></p>
+                        <p><strong>GitHub:</strong> <a href="https://sfarokhi.github.io" target="_blank" rel="noopener noreferrer">sfarokhi.github.io</a></p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="about-section">
+        <!-- Certification Section -->
+        <section class="certification-section" id="certifications">
             <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About</h2>
-                        <p>Hello! I'm Sallar Farokhi, a researcher and developer passionate about exploring innovative solutions in distributed systems, security, and data analytics.</p>
-                        
-                        <p>My work focuses on building scalable and secure systems that can handle complex computational challenges. I'm particularly interested in:</p>
-                        
-                        <ul>
-                            <li><strong>Distributed Systems</strong>: Designing and implementing systems that can efficiently manage workloads across multiple nodes</li>
-                            <li><strong>Security</strong>: Developing techniques to protect data access patterns and ensure system security</li>
-                            <li><strong>Data Analytics</strong>: Creating high-performance stream processing systems for real-time analysis</li>
-                            <li><strong>Cloud Computing</strong>: Optimizing resource allocation and workload placement, including carbon-aware scheduling</li>
-                        </ul>
-                        
-                        <p>Through my research projects, I've worked on carbon-aware Kubernetes schedulers, oblivious datastores for protecting data access patterns, content moderation systems, safety-aligned dataset engines, and high-performance stream processing frameworks.</p>
-                        
-                        <p>Feel free to explore my projects and research papers, and don't hesitate to reach out if you'd like to collaborate or discuss any of my work!</p>
+                <h2 class="section-title">Certifications</h2>
+                <div class="certification-item">
+                    <div class="cert-header">
+                        <h3>Certified Kubernetes Application Developer (CKAD)</h3>
+                        <p class="cert-org">Cloud Native Computing Foundation</p>
+                        <p class="cert-date">March 31, 2025</p>
+                        <p class="cert-id">Certificate ID: Lf-ia98mfq5cf</p>
+                    </div>
+                    <div class="cert-preview-full">
+                        <iframe src="assets/img/CKAD.pdf#view=FitH" type="application/pdf" class="cert-iframe-full"></iframe>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="http://training.linuxfoundation.org/certification/verify" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify Certificate</a>
+                        <a href="assets/img/CKAD.pdf" download class="btn btn-secondary">Download Certificate</a>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="contact-section">
-                    <h2>Contact</h2>
-                    <p>Feel free to reach out for collaborations, questions, or opportunities.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/sfarokhi" target="_blank" rel="noopener noreferrer" class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <!-- Education Section -->
+        <section class="education-section" id="education">
+        <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-content">
+                    <div class="education-item education-ms">
+                        <div class="education-header">
+                            <h3>Master of Science in Computer Science</h3>
+                            <p class="education-date">September 2024 – December 2025</p>
+                        </div>
+                        <p class="education-institution">University of California, Santa Cruz</p>
+                        <div class="education-details">
+                            <p>I'm currently pursuing my Master's degree, diving deep into cutting-edge topics like advanced computer security, deep learning, and cloud computing. The program has given me hands-on experience with stream processing systems and computations on encrypted data, which directly informed my work on projects like Speedly and Locker. The coursework has been instrumental in shaping my approach to building secure, scalable systems.</p>
+                            <p><strong>Key Courses:</strong> Advanced Computer Security, Deep Learning, Stream Processing, Computations on Encrypted Data, Cloud Computing</p>
+                        </div>
+                    </div>
+                    <div class="education-item education-bs">
+                        <div class="education-header">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <p class="education-date">October 2020 – March 2024</p>
+                        </div>
+                        <p class="education-institution">University of California, Santa Cruz</p>
+                        <div class="education-details">
+                            <p>My undergraduate studies laid the foundation for everything I do today. I focused heavily on systems-level programming, learning how computers actually work under the hood through courses in computer architecture and systems design. The distributed systems and networking classes taught me how to think about building systems that scale, while cybersecurity courses gave me the security-first mindset I apply to all my projects.</p>
+                            <p><strong>Key Courses:</strong> Computer Systems and Architecture, Distributed Systems, Computer Networking, Cybersecurity, Databases, and Data Structures and Algorithms</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!-- Workplace Section -->
+        <section class="workplace-section" id="experience">
+            <div class="container">
+                <div class="workplace-content">
+                    <h2>Experience</h2>
+                    <div class="workplace-info">
+                        <div class="workplace-header">
+                            <h3><a href="https://www.hyperanalytics.us" target="_blank" rel="noopener noreferrer">HyperAnalytics</a></h3>
+                            <p class="workplace-role">Software Developer</p>
+                            <p class="workplace-date">June 2025 – Present</p>
+                        </div>
+                        <p class="workplace-location">San Jose, CA</p>
+                        <p class="workplace-description">I work at HyperAnalytics where we help companies unlock the full potential of their data through generative AI. It's been an exciting journey building systems that automate analytics and drive data-driven decision making.</p>
+                        <div class="workplace-achievements">
+                            <h4>What I've Been Working On:</h4>
+                            <ul>
+                                <li>Built a local, multimodal application using LangChain that fully automates company analytics while keeping client data secure. It's been rewarding to see how this has streamlined our clients' workflows.</li>
+                                <li>Developed a feature-based extraction system using Pydantic and QA prompts, with Redis handling the parsing of B2B insights. This has made it much easier to extract structured data from unstructured sources.</li>
+                                <li>Integrated our platform with AWS and connected it to various data sources like Slack and Telegram's API. It's been great working on the infrastructure side, making sure everything scales and stays reliable.</li>
+                            </ul>
+                        </div>
+                        <div class="workplace-details">
+                            <p><strong>Location:</strong> 900 E Hamilton Avenue, Suite 100, Campbell, CA 95088</p>
+                            <p><strong>Contact:</strong> <a href="tel:+14084388102">+1 (408) 438-8102</a> | <a href="mailto:info@hyperanalytics.us">info@hyperanalytics.us</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.hyperanalytics.us" target="_blank" rel="noopener noreferrer">www.hyperanalytics.us</a></p>
+                        </div>
+                    </div>
+                    <div class="workplace-info">
+                        <div class="workplace-header">
+                            <h3>Jack Baskin School of Engineering</h3>
+                            <p class="workplace-role">Teaching Assistant</p>
+                            <p class="workplace-date">September 2024 – Present</p>
+                        </div>
+                        <p class="workplace-location">Santa Cruz, CA</p>
+                        <div class="workplace-achievements">
+                            <p>I've been teaching as a TA while working on my Master's, and it's been one of the most rewarding experiences. I help over 150 students understand the fundamentals of computer architecture, networking, and systems design. There's something really satisfying about breaking down complex concepts and seeing that "aha!" moment when students finally get it. It's also helped me become a better communicator and think more deeply about the fundamentals.</p>
+                        </div>
+                    </div>
+                    <div class="workplace-info">
+                        <div class="workplace-header">
+                            <h3>Transfreight Marine Services PVT LTD</h3>
+                            <p class="workplace-role">Software Engineer Intern</p>
+                            <p class="workplace-date">September 2023 – September 2024</p>
+                        </div>
+                        <p class="workplace-location">Hyderabad, India</p>
+                        <div class="workplace-achievements">
+                            <p>This was my first real taste of production cloud infrastructure. I got to provision and manage AWS networks using Terraform, which taught me a lot about infrastructure as code. Setting up the CI/CD pipeline with Azure DevOps was a great learning experience - there's something satisfying about seeing code automatically deploy. I also built Lambda functions to process and aggregate shipping data from PostgreSQL, which gave me hands-on experience with serverless architectures and database optimization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capstone Project Section -->
+        <section class="capstone-section" id="capstone">
+            <div class="container">
+                <h2 class="section-title">Capstone Project</h2>
+                <article class="project-item capstone-item">
+                    <div class="project-header">
+                        <h3 class="project-title">KubeFlex: A Carbon-Aware Scheduler with Live Migration</h3>
+                        <a href="https://github.com/sfarokhi/KubeFlex" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
-                            GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/sallar-farokhi" target="_blank" rel="noopener noreferrer" class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                            LinkedIn
-                        </a>
-                        <a href="assets/pdf/Sallar_Farokhi_Resume.pdf" target="_blank" rel="noopener noreferrer" class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10 9 9 9 8 9"></polyline>
-                            </svg>
-                            Resume
+                            View on GitHub
                         </a>
                     </div>
-                </div>
+                    
+                    <div class="project-content">
+                        <div class="project-details">
+                            <div class="synopsis">
+                                <h4>Synopsis</h4>
+                                <p>KubeFlex is a carbon-aware Kubernetes scheduler designed to optimize workload placement based on renewable energy availability. The system features live migration capabilities, allowing workloads to be dynamically moved to nodes powered by renewable energy sources when available. This project addresses the growing need for sustainable computing by enabling cloud infrastructure to automatically optimize for carbon emissions, helping organizations reduce their environmental impact while maintaining system performance.</p>
+                            </div>
+                            
+                            <div class="keywords">
+                                <h4>Keywords</h4>
+                                <div class="keyword-tags">
+                                    <span class="keyword-tag">Kubernetes</span>
+                                    <span class="keyword-tag">Carbon-Aware Computing</span>
+                                    <span class="keyword-tag">Live Migration</span>
+                                    <span class="keyword-tag">Green Computing</span>
+                                    <span class="keyword-tag">Container Orchestration</span>
+                                    <span class="keyword-tag">Renewable Energy</span>
+                                    <span class="keyword-tag">Workload Scheduling</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pdf-preview">
+                            <iframe src="assets/pdf/KubeFlex__A_Carbon_Aware_Scheduler_with_Live_Migration.pdf#view=FitH" type="application/pdf" class="project-pdf"></iframe>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Research Projects</h2>
+            </div>
+            <div class="projects-floating-row">
+                    <!-- Project 1: SADE -->
+                    <article class="project-card" data-project="sade">
+                    <div class="project-header">
+                        <h3 class="project-title">SADE: Safety Aligned Dataset Engine</h3>
+                        <a href="https://github.com/flacman/DatasetCreator" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-details">
+                            <div class="synopsis">
+                                <h4>Synopsis</h4>
+                                <p>SADE (Safety Aligned Dataset Engine) is a dataset engine focused on safety alignment, ensuring AI models are trained on datasets that promote safe and ethical behavior. The system helps create training datasets that align with safety and ethical guidelines. As AI systems become more prevalent, ensuring they behave safely and ethically is crucial. SADE addresses this need by providing tools to create training datasets that inherently promote safe and ethical AI behavior, contributing to the development of more trustworthy AI systems.</p>
+                            </div>
+                            
+                            <div class="keywords">
+                                <h4>Keywords</h4>
+                                <div class="keyword-tags">
+                                    <span class="keyword-tag">AI Safety</span>
+                                    <span class="keyword-tag">Dataset Engineering</span>
+                                    <span class="keyword-tag">Ethical AI</span>
+                                    <span class="keyword-tag">Machine Learning</span>
+                                    <span class="keyword-tag">Data Quality</span>
+                                    <span class="keyword-tag">AI Alignment</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pdf-preview">
+                            <iframe src="assets/pdf/SADE__Safety_Aligned_Dataset_Engine.pdf#view=FitH" type="application/pdf" class="project-pdf"></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                    <!-- Project 2: Locker -->
+                    <article class="project-card" data-project="locker">
+                    <div class="project-header">
+                        <h3 class="project-title">Locker: An Oblivious Datastore for Protecting Data Access Patterns</h3>
+                        <a href="https://github.com/sfarokhi/Locker" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-details">
+                            <div class="synopsis">
+                                <h4>Synopsis</h4>
+                                <p>Locker is an oblivious datastore system that protects data access patterns from potential adversaries. The system uses advanced cryptographic techniques to ensure that even an adversary with full visibility into the system's operations cannot determine which data is being accessed. In an era where data privacy is paramount, Locker provides a crucial layer of protection for sensitive data access patterns, particularly important for systems handling confidential information where access patterns themselves could reveal sensitive information.</p>
+                            </div>
+                            
+                            <div class="keywords">
+                                <h4>Keywords</h4>
+                                <div class="keyword-tags">
+                                    <span class="keyword-tag">Oblivious RAM</span>
+                                    <span class="keyword-tag">Cryptography</span>
+                                    <span class="keyword-tag">Data Privacy</span>
+                                    <span class="keyword-tag">Access Pattern Protection</span>
+                                    <span class="keyword-tag">Security</span>
+                                    <span class="keyword-tag">Privacy-Preserving Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pdf-preview">
+                            <iframe src="assets/pdf/Locker__An_Oblivious_Datastore_for_Protecting_Data_Access_Patterns.pdf#view=FitH" type="application/pdf" class="project-pdf"></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                    <!-- Project 3: Speedly -->
+                    <article class="project-card" data-project="speedly">
+                    <div class="project-header">
+                        <h3 class="project-title">Speedly: Aggregating Traffic Analysis through Stream Processing</h3>
+                        <a href="https://github.com/sfarokhi/Speedly" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-details">
+                            <div class="synopsis">
+                                <h4>Synopsis</h4>
+                                <p>Speedly is a high-performance stream processing system designed for real-time traffic analysis and aggregation. The system enables efficient network monitoring and analytics by processing data streams in real-time with minimal latency. In an increasingly connected world, the ability to analyze network traffic in real-time is essential for network security, performance optimization, and understanding network behavior. Speedly provides a robust foundation for building real-time network analytics systems.</p>
+                            </div>
+                            
+                            <div class="keywords">
+                                <h4>Keywords</h4>
+                                <div class="keyword-tags">
+                                    <span class="keyword-tag">Stream Processing</span>
+                                    <span class="keyword-tag">Real-Time Analytics</span>
+                                    <span class="keyword-tag">Network Monitoring</span>
+                                    <span class="keyword-tag">Traffic Analysis</span>
+                                    <span class="keyword-tag">High Performance Computing</span>
+                                    <span class="keyword-tag">Data Streaming</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pdf-preview">
+                            <iframe src="assets/pdf/Speedly__Aggregating_Traffic_Analysis_through_Stream_Processing.pdf#view=FitH" type="application/pdf" class="project-pdf"></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                    <!-- Project 4: Moderation and Misinformation -->
+                    <article class="project-card" data-project="moderation">
+                    <div class="project-header">
+                        <h3 class="project-title">Moderation and Misinformation on Social Media</h3>
+                        <a href="https://github.com/sfarokhi/CSE253" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-details">
+                            <div class="synopsis">
+                                <h4>Synopsis</h4>
+                                <p>This research project explores automated content moderation systems and techniques for detecting and mitigating misinformation across social media platforms. The work addresses one of the most pressing challenges in modern digital communication. As social media platforms continue to grow, the need for effective content moderation becomes increasingly critical. This research contributes to the development of automated systems that can help maintain platform safety while respecting user rights and platform scalability requirements.</p>
+                            </div>
+                            
+                            <div class="keywords">
+                                <h4>Keywords</h4>
+                                <div class="keyword-tags">
+                                    <span class="keyword-tag">Content Moderation</span>
+                                    <span class="keyword-tag">Misinformation Detection</span>
+                                    <span class="keyword-tag">Machine Learning</span>
+                                    <span class="keyword-tag">Social Media</span>
+                                    <span class="keyword-tag">Natural Language Processing</span>
+                                    <span class="keyword-tag">Automated Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pdf-preview">
+                            <iframe src="assets/pdf/Moderation_and_Misinformation_on_Social_Media.pdf#view=FitH" type="application/pdf" class="project-pdf"></iframe>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+        <div class="container">
+                <h2>Contact</h2>
+                <p>Feel free to reach out for collaborations, questions, or opportunities.</p>
+                <div class="social-links">
+                    <a href="https://github.com/sfarokhi" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/sallar-farokhi" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:farokhisallar@gmail.com" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        Email
+                    </a>
+            </div>
+        </div>
+    </section>
     </main>
 
     <footer class="footer">
@@ -94,4 +451,3 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
-

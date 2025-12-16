@@ -1,93 +1,95 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Sallar Farokhi
-    - name: Location
-      value: # Update with your location
-    - name: Languages
-      value: English # Update with your languages
+cv:
+  sections:
+    - title: General Information
+      type: map
+      contents:
+        - name: Full Name
+          value: Sallar Farokhi
+        - name: Location
+          value: Vancouver, WA
+        - name: Languages
+          value: English
 
-- title: Education
-  type: time_table
-  contents:
-    # Add your education entries here
-    # Example:
-    # - title: Degree Name
-    #   institution: University Name, Location
-    #   year: Year
-    #   description:
-    #     - Description of your studies
-    #     - Relevant coursework or achievements
+    - title: Education
+      type: time_table
+      contents:
+        # Add your education entries here
+        # Example:
+        # - title: Degree Name
+        #   institution: University Name, Location
+        #   year: Year
+        #   description:
+        #     - Description of your studies
+        #     - Relevant coursework or achievements
 
-- title: Experience
-  type: time_table
-  contents:
-    # Add your work experience here
-    # Example:
-    # - title: Position Title
-    #   institution: Company/Organization Name
-    #   year: Start Year - End Year (or "Present")
-    #   description:
-    #     - Key responsibility or achievement
-    #     - Another key point
+    - title: Experience
+      type: time_table
+      contents:
+        # Add your work experience here
+        # Example:
+        # - title: Position Title
+        #   institution: Company/Organization Name
+        #   year: Start Year - End Year (or "Present")
+        #   description:
+        #     - Key responsibility or achievement
+        #     - Another key point
 
-- title: Research Projects
-  type: time_table
-  contents:
-    - title: KubeFlex - A Carbon-Aware Scheduler with Live Migration
-      year: # Add year
-      description: A carbon-aware Kubernetes scheduler that optimizes workload placement based on renewable energy availability, featuring live migration capabilities.
-    - title: Locker - An Oblivious Datastore for Protecting Data Access Patterns
-      year: # Add year
-      description: An oblivious datastore system designed to protect data access patterns from potential adversaries through advanced cryptographic techniques.
-    - title: Moderation and Misinformation on Social Media
-      year: # Add year
-      description: Research on automated content moderation systems and techniques for detecting and mitigating misinformation across social media platforms.
-    - title: SADE - Safety Aligned Dataset Engine
-      year: # Add year
-      description: A dataset engine focused on safety alignment, ensuring AI models are trained on datasets that promote safe and ethical behavior.
-    - title: Speedly - Aggregating Traffic Analysis through Stream Processing
-      year: # Add year
-      description: A high-performance stream processing system for real-time traffic analysis and aggregation, enabling efficient network monitoring and analytics.
+    - title: Research Projects
+      type: time_table
+      contents:
+        - title: KubeFlex - A Carbon-Aware Scheduler with Live Migration
+          year: # Add year
+          description: A carbon-aware Kubernetes scheduler that optimizes workload placement based on renewable energy availability, featuring live migration capabilities.
+        - title: Locker - An Oblivious Datastore for Protecting Data Access Patterns
+          year: # Add year
+          description: An oblivious datastore system designed to protect data access patterns from potential adversaries through advanced cryptographic techniques.
+        - title: Moderation and Misinformation on Social Media
+          year: # Add year
+          description: Research on automated content moderation systems and techniques for detecting and mitigating misinformation across social media platforms.
+        - title: SADE - Safety Aligned Dataset Engine
+          year: # Add year
+          description: A dataset engine focused on safety alignment, ensuring AI models are trained on datasets that promote safe and ethical behavior.
+        - title: Speedly - Aggregating Traffic Analysis through Stream Processing
+          year: # Add year
+          description: A high-performance stream processing system for real-time traffic analysis and aggregation, enabling efficient network monitoring and analytics.
 
-- title: Skills
-  type: nested_list
-  contents:
-    - title: Distributed Systems
-      items:
-        - Kubernetes
-        - Container orchestration
-        - Cloud computing
-    - title: Security
-      items:
-        - Cryptographic systems
-        - Data privacy
-        - Access pattern protection
-    - title: Data Analytics
-      items:
-        - Stream processing
-        - Real-time analytics
-        - Network monitoring
-    - title: Programming Languages
-      items:
-        - # Add your programming languages here
+    - title: Skills
+      type: nested_list
+      contents:
+        - title: Distributed Systems
+          items:
+            - Kubernetes
+            - Container orchestration
+            - Cloud computing
+        - title: Security
+          items:
+            - Cryptographic systems
+            - Data privacy
+            - Access pattern protection
+        - title: Data Analytics
+          items:
+            - Stream processing
+            - Real-time analytics
+            - Network monitoring
+        - title: Programming Languages
+          items:
+            - # Add your programming languages here
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Distributed Systems
-      items:
-        - Carbon-aware scheduling
-        - Workload optimization
-        - Container orchestration
-    - title: Security
-      items:
-        - Oblivious data structures
-        - Privacy-preserving systems
-        - Cryptographic protocols
-    - title: Data Analytics
-      items:
-        - Stream processing
-        - Real-time traffic analysis
-        - Network monitoring
+    - title: Academic Interests
+      type: nested_list
+      contents:
+        - title: Distributed Systems
+          items:
+            - Carbon-aware scheduling
+            - Workload optimization
+            - Container orchestration
+        - title: Security
+          items:
+            - Oblivious data structures
+            - Privacy-preserving systems
+            - Cryptographic protocols
+        - title: Data Analytics
+          items:
+            - Stream processing
+            - Real-time traffic analysis
+            - Network monitoring
